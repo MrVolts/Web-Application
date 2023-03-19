@@ -1,0 +1,1069 @@
+:root {
+    /*--primary-color: rgba(189, 217, 100);
+    --secondary-color: rgb(209, 237, 0);*/
+    --primary-color: #c0c0c0;
+    --secondary-color: #000000;
+    --third-color: #000000;
+    --transparentbuttons: rgba(185, 185, 185, 0.7);
+    --nontransparentbuttons: rgba(185, 185, 185, 0.9);
+    --transparentbuttonText: #ffffff;
+    --primary-background: rgb(39, 54, 69);
+    --darker-background: rgb(29, 44, 59);
+    --even-darker-background: rgb(19, 34, 49);
+}
+
+.saturated {
+    color: var(--secondary-color) !important;
+}
+
+.hbutton {
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+    background-color: var(--primary-background);
+    border-color: var(--primary-background);
+    border-radius: 7px;
+    border-width: 3px;
+    border-style: solid;
+    color: var(--primary-color);
+    ;
+}
+
+.hbutton:hover {
+    background-color: var(--darker-background);
+    color: var(--secondary-color);
+    transition-duration: 0.3s;
+}
+
+.hbuttonbox {
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+    background-color: var(--primary-background);
+    border-color: var(--primary-background);
+    border-radius: 7px;
+    border-width: 3px;
+    border-style: solid;
+    color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Homebuttons {
+    bottom: 50%;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.headerr {
+
+    color: var(--secondary-color);
+    font-size: large;
+    margin: 5px;
+    border-radius: 5px;
+
+    border-width: 2px;
+    ;
+}
+
+.mainstuff {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    ;
+    position: relative;
+
+}
+
+.things {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs {
+    background-color: var(--darker-background);
+    border-radius: 7px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%;
+    min-width: none;
+    align-self: center;
+    font-size: large;
+
+
+}
+
+.inputs:hover {
+    background-color: var(--even-darker-background);
+    transition-duration: 0.3s;
+}
+
+.inputs:focus {
+    outline: none;
+    background-color: rgb(19, 34, 49);
+    color: var(--secondary-color);
+}
+
+.defaultext {
+    margin: 0px;
+    color: var(--primary-color);
+    ;
+    font-size: small;
+}
+
+.boxy {
+    width: 250px;
+    height: 3000px;
+    position: absolute;
+    bottom: 0;
+    border-bottom-width: 30px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-color: blue;
+
+}
+
+.cardbox {
+    min-width: 250;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-width: 0;
+    padding-right: 0%;
+    padding-left: 0%
+}
+
+.starcard {
+    background-color: var(--primary-background);
+    border-width: 0px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: var(--primary-background);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cardtitle {
+    color: #000;
+}
+
+.carddesc {
+    justify-self: flex-end;
+    font-size: small;
+    color: var(--primary-color);
+    text-align: center;
+    ;
+
+}
+
+.cardbutton {
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    background-color: var(--primary-background);
+    border-color: var(--primary-background);
+    border-radius: 4px 4px 0px 0px;
+    border-bottom-color: var(--darker-background);
+    border-bottom-width: 3px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-style: solid;
+    color: var(--primary-color);
+}
+
+.dot {
+    border-radius: 0px;
+    border-bottom-left-radius: 100px !important;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0
+}
+
+.cardbutton:hover {
+    background-color: var(--darker-background);
+    transition-duration: 0.3s;
+    color: var(--secondary-color);
+}
+
+.dashmain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    background-color: var(--darker-background);
+}
+
+.Square {
+
+    margin: 0px;
+    border-color: var(--primary-background);
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    color: var(--primary-color);
+}
+
+.Square:active {
+    background-color: var(--secondary-color) !important;
+    color: var(--darker-background);
+    ;
+    transition-duration: 0.15s;
+}
+
+
+.dashmainmobile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.keyboardrow {
+    display: flex;
+    justify-content: center;
+}
+
+.keyboardcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hbuttonwide {
+    width: 100%;
+    height: 70px;
+    margin: 10px;
+    background-color: var(--primary-background);
+    border-color: var(--primary-background);
+    border-radius: 7px;
+    border-width: 3px;
+    border-style: solid;
+    color: var(--primary-color);
+}
+
+.hbuttonwide:hover {
+    background-color: var(--darker-background);
+    color: var(--secondary-color);
+    transition-duration: 0.3s;
+}
+
+.navbarmain {
+    background-color: transparent;
+    /*var(--primary-background);*/
+    display: flex;
+    justify-content: flex-start;
+}
+
+.leftnav {
+    display: flex;
+    margin-left: 5%;
+    height: 35px;
+
+}
+
+.rightnav {
+    display: flex;
+    margin-right: 5%;
+    align-self: flex-end;
+    justify-self: flex-end;
+    justify-content: flex-end;
+    height: 35px;
+    width: 100%
+}
+
+
+
+.dropbutton {
+    min-height: 35px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 0px;
+    border-width: 0px;
+    border-style: solid;
+    color: var(--secondary-color);
+    ;
+    text-align: start;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.5% ease-out;
+
+}
+
+.dropbutton:hover {
+    background-color: var(--darker-background);
+    color: var(--secondary-color);
+    transition-duration: 0.3s;
+
+}
+
+
+.dropdownmenu {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-width: 5px !important;
+    border-radius: 5px;
+    border-color: var(--primary-background);
+}
+
+.dropdownitem {
+    background-color: var(--primary-background);
+    background-color: var(--primary-background);
+    border-color: var(--primary-background);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 0px;
+    border-top-width: 3px !important;
+    border-width: 0px;
+    border-style: solid;
+    padding: 0px;
+    border-top-color: var(--darker-background) !important;
+    color: var(--primary-color);
+    ;
+}
+
+.dropdownitem:hover {
+    background-color: var(--darker-background);
+    color: var(--secondary-color);
+    transition-duration: 0.3s;
+}
+
+.navbutton {
+
+    width: 100%;
+    min-height: 35px;
+    background-color: transparent;
+    /*var(--primary-background); 
+    border-color: var(--primary-background);
+    border-radius: 0px;*/
+    border-width: 0px;
+    border-style: solid;
+    color: var(--secondary-color);
+    ;
+    border-bottom-color: var(--darker-background);
+    border-radius: 0.75%;
+    align-content: flex-start;
+    /* Align items to the left */
+    position: relative;
+
+
+}
+
+.navbutton:hover {
+    background-color: var(--darker-background);
+    color: var(--secondary-color);
+    transition-duration: 0.3s;
+}
+
+.rail {
+    background-color: #152020;
+    height: 100%;
+    min-width: 250px;
+    max-width: 250px;
+    position: relative;
+}
+
+.settingsbar {
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75em;
+    padding-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    position: absolute;
+    bottom: 0;
+}
+
+.messageboxinput {
+    width: 100% !important;
+    resize: none;
+    resize: none;
+    margin: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+    height: 60px !important;
+    margin-right: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    line-height: 1.2em;
+    padding-left: 80px;
+    min-height: 1.2em;
+
+}
+
+.messageboxbuttonleft {
+    height: 60px !important;
+    margin: 10px;
+    width: 80px;
+    text-align: center;
+    position: absolute;
+    left: 0%;
+    font-size: 100%;
+
+}
+
+.messageboxbuttonright {
+    height: 60px !important;
+    margin: 10px;
+    width: 80px;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: center;
+    position: absolute;
+    right: 0%;
+
+}
+
+.image {
+    filter: saturate(80%) contrast(80%)
+}
+
+.imagesaturate:hover {
+    filter: saturate(100%) contrast(100%) !important;
+    transition-duration: 0.3s;
+
+}
+
+/*
+.image:hover {
+    filter: saturate(100%) contrast(100%)
+}
+*/
+.messagebox {
+    width: 60%;
+    display: flex;
+    bottom: 0 !important;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 30px !important;
+}
+
+.mobile {
+    width: 100% !important;
+    font-size: small;
+}
+
+.textboxbox {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column-reverse;
+    margin-bottom: 55px;
+}
+
+.textbox {
+    min-height: 60px;
+    overflow: hidden;
+    background-color: var(--darker-background);
+    width: 100%;
+    margin: 5px;
+    border-radius: 500px;
+    border-width: 0px;
+    padding-left: 90px;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.textboxmain {
+    position: absolute;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.textboxdot {
+    position: absolute;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    background-color: var(--primary-background);
+    border-radius: 600px;
+    left: 0%;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.circlebutton {
+    color: var(--primary-color);
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.circlebutton:hover {
+    background-color: var(--darker-background) !important;
+    color: var(--secondary-color);
+    transition-duration: 0.3s;
+}
+
+.circlebox {
+    position: absolute;
+
+    left: calc(40px);
+    transform: translate(-50%, -35%);
+    overflow: w;
+    border-bottom-right-radius: 100%;
+    border-width: 1px;
+    overflow: hidden;
+    border-color: transparent;
+    border-style: solid;
+    background-color: transparent;
+
+}
+
+.circleboxmobile {
+    border-bottom-right-radius: 0;
+    border-width: 1;
+    transform: translate(-31px, -194px);
+    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.quicktype {
+    width: 100%;
+}
+
+.quickbackground {
+    position: absolute;
+    background-color: var(--primary-background);
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 445px;
+    min-height: 445px;
+    border: 5px solid;
+    border-color: var(--even-darker-background);
+    border-radius: 50%;
+}
+
+.quickbackgroundmobile {
+    transform: translate(-90%, -50%);
+    /*make the background a colour gradient starting from the center of the element to the outside of the element*/
+    background: radial-gradient(circle at 50% 50%, transparent 0%, transparent 20%, var(--darker-background)25%);
+}
+
+.alertbox {
+    position: absolute;
+    top: 0;
+    align-self: center;
+    width: 60%;
+
+
+
+}
+
+.alertitem {
+    padding-right: 30px;
+    padding-left: 10px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    font-size: large;
+    margin: 10px;
+    background-color: rgba(255, 150, 30, 0.8);
+    border-radius: 10px;
+    position: relative;
+    border-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 1);
+
+
+}
+
+.alertbutton {
+    top: 0px;
+    right: 5px;
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    height: 30px;
+
+
+}
+
+.checkboxx {
+    border-color: var(--primary-background);
+    background-color: var(--primary-background);
+    border-width: 2px;
+    border-radius: 7px;
+    border-style: solid;
+    ;
+    display: flex;
+    overflow: wrap;
+    align-items: center;
+    min-height: 30px;
+    margin: 10px;
+    padding: 0px;
+    padding-left: 10px;
+    width: (220px)
+}
+
+.fileuploadwindow {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 170px;
+    top: 30%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--even-darker-background);
+    border-width: 3px;
+    border-radius: 14px;
+    border-style: solid;
+    border-color: var(--primary-background);
+}
+
+.darkenbackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.filebrowse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.file-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.fileuploadbuttons {
+    display: flex;
+}
+
+/*        stuff above mostly is not important */
+
+.TopNavBar {
+    position: relative;
+    top: 0;
+    margin: 10px;
+    margin-top: 0px;
+    display: flex;
+    ;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.CompanyNameNav {
+    color: var(--secondary-color);
+    font-size: large;
+
+
+
+}
+
+.TopNavBarMain {
+    margin: 10px;
+    display: flex;
+    align-self: flex-start;
+    padding-left: 12%
+}
+
+.Logobox {
+    margin-left: 10px !important;
+    margin: 0px
+}
+
+.TopNavBarSeperator {
+    margin: 10px;
+    margin-bottom: 50px;
+    width: 80%;
+    background-color: var(--even-darker-background);
+    height: 20px;
+    border-radius: 7px;
+
+}
+
+.HomeMainImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slogan {
+
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    height: 100px;
+}
+
+.HomePageNavigationButton {
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+    background-color: var(--transparentbuttons);
+    border-color: var(--primary-background);
+    border-radius: 7px;
+    border-width: 3px;
+    border-style: solid;
+    color: var(--secondary-color);
+    ;
+    font-size: 20px;
+}
+
+.HomePageNavigationButton:hover {
+    background-color: var(--nontransparentbuttons);
+    transition-duration: 0.3s;
+}
+
+.ProductCategory {
+    overflow: hidden;
+
+    position: relative;
+    padding: 0px;
+    width: 350px;
+    height: 220px;
+    margin: 30px;
+    background-color: var(--transparentbuttons);
+    border-color: var(--primary-background);
+    border-radius: 7px;
+    border-width: 3px;
+    border-style: solid;
+    color: var(--secondary-color);
+    ;
+    font-size: 20px;
+
+}
+
+.ProductExampleThumbnail {
+    overflow: hidden;
+
+    position: relative;
+    padding: 0px;
+    width: 180px;
+    height: 150px;
+    margin: 10px;
+    background-color: var(--transparentbuttons);
+    border-color: var(--primary-background);
+    border-radius: 7px;
+    border-width: 3px;
+    border-style: solid;
+    color: var(--secondary-color);
+    ;
+    font-size: 20px;
+}
+
+.Productcatergorys {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    margin: 0;
+    z-index: 2;
+    position: absolute;
+    ;
+    right: 10%;
+}
+
+.hamburger-menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 300px;
+    margin-top: 90px;
+    margin-left: calc(89% - 300px);
+    border-radius: 7px;
+
+    background-color: var(--even-darker-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hamburger-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hamburger-menu ul li {
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--primary-color)
+}
+
+.hamburger-menu.open {
+    pointer-events: all;
+    opacity: 1;
+
+}
+
+.Hamburgeroptions {
+    width: 100%;
+    text-align: left;
+}
+
+.FilteroptionDropdown {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    width: 180px;
+    height: 50px;
+    margin: 10px;
+    background-color: var(--transparentbuttons);
+    border-color: var(--primary-background);
+    border-radius: 7px;
+    border-width: 3px;
+    border-style: solid;
+    color: var(--secondary-color);
+    ;
+    font-size: 20px;
+}
+
+.Filteroption {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    width: 180px;
+    height: 50px;
+    margin: 10px;
+    background-color: var(--transparentbuttons);
+    border-color: var(--primary-background);
+    border-radius: 50px;
+    border-width: 3px;
+    border-style: solid;
+    color: var(--secondary-color);
+    ;
+    font-size: 20px;
+
+}
+
+.Filteroption:hover {
+    background-color: var(--transparentbuttonText);
+    transition-duration: 0.3s;
+}
+
+.Filters {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: -40px;
+
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.Filteroption.dropdown-btn {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+    width: 180px;
+    height: 50px;
+    margin: 10px;
+    background-color: var(--transparentbuttons);
+    border-color: var(--primary-background);
+    border-radius: 7px;
+    border-width: 3px;
+    border-style: solid;
+    color: var(--secondary-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--even-darker-background);
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    color: var(--primary-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+.ProductPageRoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    margin-bottom: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductPageBuyButton {
+    background-color: #1abc9c;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ProductPageBuyButton:hover {
+    background-color: #16a085;
+}
+
+.ProductInformationSeperator{
+    display: flex;
+}
+
+.Verticalbox{
+    margin:10px;
+    text-align: left;
+}
+
+.AddtoCartButton{
+    border-radius: 20px;
+    margin:0px;
+    margin-top: 10px;
+    background-color: #5956FF ;
+}
+
+.Productsroot {
+    min-height: 150vh; /* Adjust the value as needed */
+}

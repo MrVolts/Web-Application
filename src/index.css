@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-css {
+  /*border-radius: 50px;*/
+  border-color: #ff30cb;
+  color: #ff0000;
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  font-size: calc(10px + 2vmin);
+  color: white;
+  align-items: center;
+}
+.main-csss{
+  position:relative;
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+.switch {
+  top: 100;
+  right: 50vh;
+  min-width: 30vh;
+  min-height: 20vh;
+  /*background-color: #303050;*/
+  background: linear-gradient(to bottom right, #303050, #202040);
+  border-radius: 2vh;
+  border-style: solid;
+  border-width: 0.75vh;
+  border-color: #202040;;
+  position: relative;;
+}
+.buttonn {
+  background-color: #4CAF50; 
+  position:absolute;
+  border:transparent;
+  border-radius: 5px;
+  padding: 15px 32px;
+  right: 0px;
+  left:0px;
+  top:0px;
+  border-style:groove;
+  border-color: #101010;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+  .buttonn:hover {
+    background-color: #ff30cb; 
+    border:transparent;
+    border-radius: 5px;
+    align-self: center;
+    border-style:dotted;
+    border-color: #101010;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }  
+
+
+.output {
+  background-color: #202040;
+  background: transparent;  
+  position:absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  border-radius: 3vh;
+  font-size: 15px;
+  text-align:center;
+
+}
+
+.navbar {
+  background-color: rgba(50,50,50,0.8) !important;
+}
+
+.Square {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 25px;
+  position: relative;
+  border-color: rgba(0,0,0,0);
+  transition: background-color 0.0s;
+  margin:0px;
+  box-sizing: border-box;
+}
+/*.Square:hover {
+  background-color: yellow;
+  transition-duration: 0.01s;
+}
+*/
+.text{
+  position:absolute;
+  bottom: 0px;
+  left: 2px;
+}
+
+.grid-container {
+  padding-bottom:0px;
+  padding-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  align-content:baseline;
+  justify-content: center;
+  justify-self: flex-start;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-content: stretch;
+  margin:0px;
+  border-width:0
+
+}
+/*
+.pop{
+  color:purple;
+}
+*/
+.pack{
+  display:flex;
+  flex-wrap: wrap;
+  width: 50%;
+
+  /*background-color: rgba(51, 61, 71,1);*/
+}
+
+
+/*
+
+import { Link } from 'react-router-dom';
+
+
+const Hbutton = ({text, link}) =>{
+    return(
+        <div className = "button">
+            <Link to={link}>
+            <button className = "hbutton" variant="primary" size="lg">{text}</button>
+
+            </Link>
+        </div>
+    )
+}
+const Loginbutton = ({link,text}) =>{
+    return(
+        <div className = "button">
+            <Link to={link}>
+            <button className = "hbutton" variant="primary" size="lg">{text}</button>
+
+            </Link>
+        </div>
+    )
+}
+
+const Input = () => {
+    return(
+        <div className="inputss" style = {{display:"flex",flexDirection:"column",width:"20%"}}>
+            <p className = "defaultext">Email</p>
+            <input className = "inputs"  type = "text" name = "username"></input>
+            <p className = "defaultext">Password</p>
+            <input className = "inputs" type = "text" name = "password"></input>
+        </div>
+    )
+}
+
+export default function Home() {
+    return(
+            <div style = {{width:"100%",height:"100%"}}>
+            <div className='mainstuff'>
+                <p className='headerr'> <b>Login</b></p>
+                <p className='headerr'> description </p>
+            <Input/>
+            <div className='Homebuttons'>
+                <Loginbutton 
+                    text = {"sign up instead"} 
+                    link = {"/signup"}/>
+                <Hbutton 
+                    text = {"Go"} 
+                    link = {"/Home"}/>
+            </div>
+
+            </div>
+            </div>
+    )
+}
+*/
