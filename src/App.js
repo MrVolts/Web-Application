@@ -6,6 +6,7 @@ import Abt from './pages/about.js'
 import Productbrowser from './pages/productsmain'
 import QAPage from'./pages/qanda.js'
 import CheckoutPage from './pages/checkout.js';
+import Profile1 from './pages/profile1.js';
 import './index.css';
 
 
@@ -18,6 +19,7 @@ export default function Main() {
                 <Routes>
                 <Route path="/QandA" element={<QAPage/>} />
                 <Route path="/products" element={<Products/>} />
+                <Route path="/profile1/James" element={<Profile1/>} />
                 <Route path="/about" element={<Abt/>} />
                 <Route path="/productslist/exampleproduct" element={<ExampleProductDesc/>} />
                 <Route path="/productslist" element={<Productbrowser/>} />
