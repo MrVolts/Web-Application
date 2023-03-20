@@ -171,7 +171,7 @@ const ProductDetails = ({ children }) => (
                   <div><b>Product Name</b></div>
                   <div>Description</div>
                   <Rating>☆☆☆☆☆</Rating>
-                  <div><b>£00.00</b> <span style={{ marginLeft: '16px' }}>Quantity: - 1 +</span></div>
+                  <div><b>£10.00</b> <span style={{ marginLeft: '16px' }}>Quantity: - 1 +</span></div>
                 </ProductDetails>
                 <button className='Filteroption AddtoCartButton' style={{ alignSelf: 'flex-start' }}>Add to cart</button>
               </div>
